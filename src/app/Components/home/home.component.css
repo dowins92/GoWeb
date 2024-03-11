@@ -1,0 +1,96 @@
+
+section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 110vh;
+}
+
+ul{
+    padding-left: 30%;
+}
+
+li{
+    display: inline;
+    font-family: Monserrat_Bold;
+    font-size: small;
+}
+
+li a {
+    color: #ffffff;
+    text-align: center;
+    padding-left: 1em;
+    text-decoration: none;
+  }
+
+li a:hover {
+    color: #e91e63
+}
+
+li img{
+    width: 3%;
+}
+
+#seccion1{
+    justify-content: center;
+    align-items: center;   
+}
+
+#seccion2{
+    justify-content: center;
+    align-items: center;
+}
+
+.planecontent1{
+   width: 100%;
+   height: 100%;
+   background-image: url('../../../assets/img/Enmascarar_grupo_12.jpg');
+   background-repeat: no-repeat;
+   background-position: right bottom;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+}
+
+.nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+
+.slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: end;
+    color: #ffffff;
+
+}
+
+.slogan h3{
+    font-size: 1.5em;
+    font-family: Monserrat_Regular;
+    margin: 0;
+}
+
+.slogan h1{
+    font-size: 3.5em;
+    font-family: Monserrat_Bold;
+    margin: 0;
+}
+
+
+.img_logo{
+    width: 10%;
+}
+
+.planecontent2{
+   width: 100%;
+   height: 100%;
+   background-image: url('../../../assets/img/Enmascarar_grupo_14.jpg');
+   background-repeat: no-repeat;
+   background-position: left bottom;
+   background-size: cover;
+}
