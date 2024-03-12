@@ -70,13 +70,13 @@ li img{
 }
 
 .slogan h3{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-family: Monserrat_Regular;
     margin: 0;
 }
 
 .slogan h1{
-    font-size: 3.5em;
+    font-size: 3.5rem;
     font-family: Monserrat_Bold;
     margin: 0;
 }
@@ -93,4 +93,49 @@ li img{
    background-repeat: no-repeat;
    background-position: left bottom;
    background-size: cover;
+}
+
+.gota{
+    margin-top: 5%;
+    height: 20%;
+    width: 20%;
+    background-image: url('../../../assets/img/Rectangulo_2501.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form_area{
+    margin-left: 1%;
+    margin-top: 1%;
+    height: 50%;
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 0 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons_container{
+    padding: 2% 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.buttons_container mat-icon{
+    background-color: #e91e63;
+    height: 7vmin;
+    width: 7vmin;
+    font-size: 5.5vmin;
+    border-radius: 100%;
+    
+}
+
+.buttons_container a{
+    text-align: center;
+    padding-right: 1%;
+    color: #ffffff;
 }
