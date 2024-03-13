@@ -8,6 +8,11 @@
   src: url('./assets/fonts/Montserrat-Bold.ttf');
 }
 
+@font-face {
+  font-family: Monserrat_SemiBold;
+  src: url('./assets/fonts/Montserrat-SemiBold.ttf');
+}
+
 
 html, body { 
     height: 100%; 

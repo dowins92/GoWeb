@@ -28,18 +28,77 @@
             </div>
 
             <div class="gota"></div>
-            <div class="form_area">
+            <form class="form_area">
+                <!-- Botones superiores del formulario -->
                 <div class="buttons_container">
-                    <a href="#"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="flight"></mat-icon> </a>
-                    <a href="#"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="location_city"></mat-icon></a>
-                    <a href="#"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon> </a>
-                    <a href="#"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="my_location"></mat-icon> </a>
-                    <a href="#"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="directions_car"></mat-icon> </a>
-                    <a href="#"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="directions_bus"></mat-icon> </a>
-                    <a href="#"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="map"></mat-icon> </a>
+                    <div class="button-row">
+                        <a mat-mini-fab matTooltip="Accent" color="accent" aria-label="Vuelos" class="active">
+                          <mat-icon [style.transform]="'rotate(90deg)'">flight</mat-icon>
+                        </a>
+                        <a mat-mini-fab matTooltip="Link" routerLink="." aria-label="Hoteles">
+                          <mat-icon>domain</mat-icon>
+                        </a>
+                        <a mat-mini-fab matTooltip="Link" routerLink="." aria-label="Casas">
+                            <mat-icon>home</mat-icon>
+                        </a>
+                        <a mat-mini-fab matTooltip="Link" routerLink="." aria-label="Guia">
+                            <mat-icon>explore</mat-icon>
+                        </a>
+                        <a mat-mini-fab matTooltip="Link" routerLink="." aria-label="Autos">
+                            <mat-icon>directions_car</mat-icon>
+                        </a>
+                        <a mat-mini-fab matTooltip="Link" routerLink="." aria-label="Autobus">
+                            <mat-icon>directions_bus</mat-icon>
+                        </a>
+                        <a mat-mini-fab matTooltip="Link" routerLink="." aria-label="Mapas">
+                            <mat-icon>map</mat-icon>
+                        </a>
+                      </div>
+                </div>
+
+                <!-- Radio buttons -->
+                <div class="radio_container">
+                    <mat-radio-group aria-label="Seleccione forma de viaje">
+                        <mat-radio-button value="1">Ida y vuelta</mat-radio-button>
+                        <mat-radio-button value="2">Solo ida</mat-radio-button>
+                        <mat-radio-button value="3">Multidestino</mat-radio-button>
+                      </mat-radio-group>
+                </div>
+
+                <!-- Inputs -->
+                <div class="form_container">
+                    <div class="subform_container">
+                        <div class="group">
+                            <mat-icon>location_on</mat-icon>
+                            <input class="input" type="text" placeholder="Origen">
+                        </div>
+
+                        <div class="group">
+                            <mat-icon>location_on</mat-icon>
+                            <input class="input" type="text" placeholder="Destino">
+                        </div>
+                    </div>
+                    <div class="group">
+                        <mat-icon>date_range</mat-icon>
+                        <input class="input" type="date" placeholder="Fecha de Salida">
+                    </div>
+                    <div class="group">
+                        <mat-icon>date_range</mat-icon>
+                        <input class="input" type="date" placeholder="Fecha de Retorno">
+                    </div>
+                    <div class="group">
+                        <mat-icon>person_add</mat-icon>
+                        <input class="input" type="text" placeholder="Personas">
+                    </div>
                 </div>
                 
-            </div>
+                <!-- Boton commit -->
+                <div class="button-row">
+                    <button mat-raised-button aria-label="Vuelos">
+                          <mat-icon matPrefix>search</mat-icon> BUSCAR
+                    </button>
+                </div>
+            </form>
         </div>
     </section>
 
